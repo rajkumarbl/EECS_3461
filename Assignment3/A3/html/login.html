@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <link rel="stylesheet" href="/style/login.css">
+  </head>
+  
+  <body>
+  <div class="bg"></div>  
+  <div class="box" style="text-align:center">
+  <h2> Log In </h2></br>
+
+  <p> <span class="fieldName1"> Staff ID:  </span>
+  <input  style="width: 6em;" type="text" id="userId" class="input">
+  <span class="message"></span></p>
+  </p>
+
+  <p> <span class="fieldName2"> Password:</span>
+  <input  style="width: 6em;" type="password" id="p1" class="input">
+  <span class="message"></span></p>
+  </p>
+
+  <hr>
+
+  <p  style="text-align:center;"> <button id="b1"> Sign In</button> </p>
+  <p  style="text-align:center;"> <button id="b2"> Register</button> </p>
+  
+  <p>Forgot Password? Click <a href="dummy.html">here</a></p>  
+  </div>
+  </body>
+
+  <script type="text/javascript">
+    document.getElementById("b1").onclick = function () 
+    {
+      var password ="staff";
+      password =  password.concat(document.getElementById("userId").value);
+      if ( document.getElementById("p1").value == password){
+      location.href = "staff.html";}
+      else if(document.getElementById("p1").value != password){
+      alert("Error : Staff Id or password is wrong. Try agin!");
+      location.reload();}
+    };
+     document.getElementById("b2").onclick = function () 
+    {
+      location.href = "dummy.html";
+    };
+  </script>
+  
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <style>
+  #b1{ height:30px; width:150px; margin: -10px -70px; position:absolute; top:55%; }
+  #b2{ height:30px; width:150px; margin: -10px -70px; position:absolute; top:65%; }
+
+body, html {
+  height: 70%;
+  margin: 0;
+}
+  .bg {
+  /* The image used */
+  background-image: url("style/Pollex1.png");background-size: 500px; height: 200%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+</style>
+</head>
+<body>
+
+<div class="bg"></div>
+    <div style="text-align:center">
+    <p> <button id="b1"> STAFF </button> </p>
+    <p> <button id="b2"> RESIDENT </button> </p>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script type="text/javascript">
+     $(function() {
+      $('body').css('display', 'none');
+      $('body').fadeIn(200);
+      document.getElementById("b1").onclick = function () {
+      location.href = "html/login.html";};
+    document.getElementById("b2").onclick = function () {
+      location.href = "html/resident.html";};
+    })();
+</script>
+  
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/style/staff_style.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script type="text/javascript">
+  </script>
+  </head>
+  <body>
+    <div class="staffcontainer"> </div>
+    <div id="staff"></div>
+    <textarea rows="20" cols="165" id="emergency" placeholder="Type the emergency information here . . .">
+    </textarea>
+    <button id="emer_on" type="button">Emergency Mode - ON</button>
+    <button id="emer_off" type="button">Emergency Mode - OFF</button>
+  </body>
+  <script src="/bundle.js"></script> 
+  <script type="text/javascript">
+document.getElementById("emer_on").onclick = function () 
+    {
+    var confirmon = prompt("Type \"Confirm\" to enter emergency mode", "");
+    confirmon = confirmon.toLowerCase();
+  if (confirmon == "confirm") {
+      location.href = "emergency.html";
+      }           
+    };
+
+document.getElementById("emer_off").onclick = function () 
+    {
+    var confirmoff = prompt("Type \"Confirm\" to exit emergency mode", "");
+    confirmoff = confirmoff.toLowerCase();   
+  if (confirmoff == "confirm") {
+      alert("You have successfully exited emergency mode.");
+      }      
+    };
+</script>
+</html>

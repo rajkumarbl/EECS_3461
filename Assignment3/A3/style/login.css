@@ -1,0 +1,55 @@
+body {
+  font-family: sans-serif;
+}
+body, html {
+  height: 100%;
+  margin: 0;background-image: url("box2.png");background-size: 600px; height: 100%;
+  background-repeat: no-repeat;
+}
+  .bg1 {
+  /* The image used */
+  background-image: url("box2.png");background-size: 600px; height: 100%;
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+}
+
+h2 { font-family: sans-serif;
+     margin: 1px;
+   text-align: center;}
+ 
+p {
+  margin: 10px;
+}
+ 
+.box { position:relative;float: center;
+  width: 18.75%;right:-40%;top:200px;
+  border: 3px solid black;
+  padding: 10px;
+}
+.input { width: 55em;}
+ 
+ .fieldName1 {
+   margin:20px;
+   width: 50%;
+   padding-right: 7px;
+   font-family: sans-serif;
+ }
+.fieldName2 {
+   margin:12px;
+   width: 50%;
+   padding-right: 7px;
+   font-family: sans-serif;
+ }
+ 
+ .message {
+   font-family: monospace;
+   color: blue; 
+   width: 6em;
+   height: 0.5em;
+   display: inline-block;
+ }
+
+#b1{ height:30px; width:150px;margin:7px;}#b1:hover {
+  background-color: #ccc;}
+  #b2{ height:30px; width:150px;margin:0px;}#b2:hover {
+    background-color: #ccc;}
